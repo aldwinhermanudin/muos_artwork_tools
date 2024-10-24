@@ -1,0 +1,23 @@
+<ImageComposition xsi:noNamespaceSchemaLocation="https://www.skraper.net/ImageComposition.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Information ShortName="muOS Box Art 3" LongName="muOS Box Art Mix 3" Description="Wheel + Screenshot + 2DBox" Author="aldwinhermanudin" />
+	<Viewport Color="#00FFFFFF" Width="320" Height="420" />
+	<Drawings>
+    <Item Type="Screenshot">
+      <Display X="55%" Y="45%" Antialiasing="None" Height="240" KeepRatio="true" Anchor="VCenterHCenter" />
+      <Fallback Type="ScreenshotTitle">
+        <Fallback Type="SystemWallPaper">
+          <Children Reference="Parent">
+            <Item Type="Text" Text="No Screenshot!" TextColor="#FFFFFFFF" FontFamilly="Arial" FontStyle="Bold Italic" />
+          </Children>
+        </Fallback>
+      </Fallback>
+    </Item>
+    <Item Type="Box2DFront">
+      <Display X="100%" Y="98%" Antialiasing="None" Transparency="0.9" Width="190" Height="140" KeepRatio="true" Anchor="BottomRight" />
+    </Item>
+    <Item Type="Wheel">
+      <Display X="5%" Y="7%" Width="190" Height="100%" Anchor="TopLeft" Antialiasing="Medium" KeepRatio="true" IfSystem="IsNotInTheList:2"/>
+      <Fallback Type="Text" Text="%name%"  TextColor="#FFFFFFFF" FontFamilly="Arial" FontStyle="Bold Italic" IfSystem="IsNotInTheList:2"/>
+    </Item>
+	</Drawings>
+</ImageComposition>
